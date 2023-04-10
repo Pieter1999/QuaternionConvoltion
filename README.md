@@ -1,8 +1,8 @@
 # Quaternion Convolutional Neural Networks reproduction
 
 ### Students
-Jasper van Leuven, 4648404, Js.vanLeuven@student.tudelft.nl
-Alexandru Bobe, 5069831, A.Bobe@student.tudelft.nl
+Jasper van Leuven, 4648404, Js.vanLeuven@student.tudelft.nl  
+Alexandru Bobe, 5069831, A.Bobe@student.tudelft.nl  
 Pieter de Lange, 4678362, P.delange@student.tudelft.nl
 
 ## Introduction
@@ -124,6 +124,7 @@ The table that needs to be repoduced is depicted below. However our test results
 We were also wondering why it seems that our CNN performs so much worse and looking at our graphs vs those in the paper down below, our loss does not match at all, and we learn slower.
 
 ![Table 1](./losses.png)
+![Table 1](./training_losses.png)
 
 ## Conclusion
 
