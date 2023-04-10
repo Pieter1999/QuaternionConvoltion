@@ -1,8 +1,8 @@
 # Quaternion Convolutional Neural Networks reproduction
 
 ### Students
-Jasper van Leuven,  
-Alexandru Bobe,  
+Jasper van Leuven, 4648404, Js.vanLeuven@student.tudelft.nl
+Alexandru Bobe, 5069831, A.Bobe@student.tudelft.nl
 Pieter de Lange, 4678362, P.delange@student.tudelft.nl
 
 ## Introduction
@@ -127,4 +127,10 @@ We were also wondering why it seems that our CNN performs so much worse and look
 
 ## Conclusion
 
+The paper clearly states that by using QCNNs, a significant difference of 3 to 4 percent can be achieved in terms of accuracy. After extensive searching, we have found that QCNN does indeed perform better than CNN, but the difference was not as large as stated in the paper.  
 
+The results we have obtained are even higher on average than those discussed in the paper, and we believe this is because our networks have more parameters than those in the paper. The paper does not clearly indicate how many kernels each layer has, which forced us to puzzle it out ourselves. So we were able to reproduce the results to some extent, and the results are consistent, but the differences are not as significant in our case.  
+
+As mentioned, we believe that the difference in the achieved accuracy is due to the number of hyperparameters in our networks, and we also believe that the difference between the two networks in terms of accuracy largely depends on the data preprocessing. The paper uses techniques such as horizontal flipping and translating, but the hyperparameters for these techniques are not discussed. It could be that the QCNN responds better to these preprocessing techniques, and that the hyperparameters in the paper have caused these significant differences.  
+
+With these results, we can conclude that QCNN performs slightly better than CNN, but the paper could have specified which hyperparameters were used exactly.
