@@ -88,3 +88,9 @@ The results we have obtained are even higher on average than those discussed in 
 As mentioned, we believe that the difference in the achieved accuracy is due to the number of hyperparameters in our networks, and we also believe that the difference between the two networks in terms of accuracy largely depends on the data preprocessing. The paper uses techniques such as horizontal flipping and translating, but the hyperparameters for these techniques are not discussed. It could be that the QCNN responds better to these preprocessing techniques, and that the hyperparameters in the paper have caused these significant differences.  
 
 With these results, we can conclude that QCNN performs slightly better than CNN, but the paper could have specified which hyperparameters were used exactly.
+
+## Task distribution  
+
+Jasper: QCNN architecture, CNN architecture, training code, blog  
+Alexandru: Pre-Processing code, QCNN architecture, blog  
+Pieter: Result generation, QCNN architecture, blog  
