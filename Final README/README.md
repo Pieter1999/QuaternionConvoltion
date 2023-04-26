@@ -61,6 +61,9 @@ Two different modules are defined within the script, which contain the layer arc
 
 The modules use PyTorch's *nn.Module* class as a base class, and implement a *forward()* method that defines the computation graph for the network. The *forward()* method takes an input tensor and passes it through the layers of the network, using various activation functions to produce the final output. Each module also has a *name()* method that returns a string with the name of the module.
 
+#### Unclarity
+A confusing aspect of the paper was the determination of the number of kernels used within the neural networks. The QCNN should have the same amount of kernels as the regular CNN but since the kernels were bundeled in the QCNN instead of single channels, it was confusing to determine the exact number of kernels to be used for the CNN from the paper. 
+
 ### Training
 After having developed the network architectures as described above, they can be trained using a dedicated script. The training process begins with setting the number of epochs to be trained, which is 80 in this case. A list called "losses" is initialized to store the training loss values. The training loss represents the difference between the predicted output and the actual label of each training example, and it is used to optimize the network's parameters.  
 
